@@ -1,0 +1,19 @@
+@import url(./reset.css);
+header { position: fixed; left: 0; top: 0; width: 100%; height: 66px; background-color: #ff0; border-bottom: 3px solid #000; }
+header > .gnb { display: flex; }
+
+section { margin-top: 69px; }
+section > .bx-wrapper { position: relative; }
+section > .bx-wrapper .myslider { height: 440px; }
+section > .bx-wrapper .myslider > li { width: 100%; height: 440px; background-position: center top; background-repeat: no-repeat; }
+section > .bx-wrapper .myslider > li.slide-1 { background-image: url(../images/main/mainbanr_001.png); }
+section > .bx-wrapper .myslider > li.slide-2 { background-image: url(../images/main/mainbanr_002.png); }
+section > .bx-wrapper .myslider > li.slide-3 { background-image: url(../images/main/mainbanr_003.png); }
+section > .bx-wrapper .myslider > li.slide-4 { background-image: url(../images/main/mainbanr_004.png); }
+section > .bx-wrapper .bx-controls-direction > a { display: block; position: absolute; top: 40%; width: 30px; height: 58px; margin-top: -29px; text-indent: -9999px; background-image: url(../images/main/line_mainbanr_btn_arr.png); background-repeat: no-repeat; z-index: 1000; }
+section > .bx-wrapper .bx-controls-direction > a.bx-prev { left: 5px; background-position: -5px -141px; }
+section > .bx-wrapper .bx-controls-direction > a.bx-prev:hover { background-position: -5px -209px; }
+section > .bx-wrapper .bx-controls-direction > a.bx-next { right: 5px; background-position: -5px -5px; }
+section > .bx-wrapper .bx-controls-direction > a.bx-next:hover { background-position: -5px -73px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,79 @@
+@charset "utf-8";
+@import url(./reset.css);
+
+header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 66px;
+	background-color: #ff0;
+	border-bottom: 3px solid #000;
+
+	> .gnb {
+		display: flex;
+	}
+} //end of header
+section {
+	margin-top: 69px;
+	> .bx-wrapper {
+		position: relative;
+		.myslider {
+			height: 440px;
+
+			> li {
+				width: 100%;
+				height: 440px;
+				background-position: center top;
+				background-repeat: no-repeat;
+
+				&.slide-1 {
+					background-image: url(../images/main/mainbanr_001.png);
+				}
+				&.slide-2 {
+					background-image: url(../images/main/mainbanr_002.png);
+				}
+				&.slide-3 {
+					background-image: url(../images/main/mainbanr_003.png);
+				}
+				&.slide-4 {
+					background-image: url(../images/main/mainbanr_004.png);
+				}
+			} //end of li
+		} //end of .myslider
+
+		// 이전, 다음
+		.bx-controls-direction > a {
+			display: block;
+			position: absolute;
+			top: 40%;
+			width: 30px;
+			height: 58px;
+			margin-top: -29px;
+			text-indent: -9999px;
+			background-image: url(../images/main/line_mainbanr_btn_arr.png);
+			background-repeat: no-repeat;
+			z-index: 1000;
+
+			&.bx-prev {
+				left: 5px;
+				background-position: -5px -141px;
+
+				&:hover {
+					background-position: -5px -209px;
+				}
+			} //end of .bx-prev
+
+			&.bx-next {
+				right: 5px;
+				background-position: -5px -5px;
+
+				&:hover {
+					background-position: -5px -73px;
+				}
+			}
+		} //end of a
+
+		// 페이지네이션 (인디케이터)
+	} //end of .bx-wrapper
+} //end of section
